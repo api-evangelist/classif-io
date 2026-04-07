@@ -20,7 +20,7 @@ description: >-
   identifies and classifies various types of data.
 apis:
   - aid: classif-io:classif-io
-    name: classif.io Fashion Classification API
+    name: Classif.io Fashion Classification API
     tags:
       - Data
       - Classification
