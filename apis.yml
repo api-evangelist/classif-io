@@ -3,10 +3,10 @@ url: >-
   https://raw.githubusercontent.com/api-evangelist/classif-io/refs/heads/main/apis.yml
 name: Classif.io
 tags:
-  - Data
   - Classification
-  - Machine Learning
+  - Data
   - Fashion
+  - Machine Learning
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
@@ -22,8 +22,8 @@ apis:
   - aid: classif-io:classif-io
     name: Classif.io Fashion Classification API
     tags:
-      - Data
       - Classification
+      - Data
       - Fashion
     humanURL: https://www.classif.io/fashion-style-classification-api/
     properties:
