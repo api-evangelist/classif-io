@@ -1,0 +1,23 @@
+capabilities:
+  - id: classif-io.classify-fashion
+    name: Classify fashion images
+    description: >-
+      Detect and label clothing items in images, including shirts,
+      pants, dresses, and accessories, with style and category metadata.
+    apis:
+      - classif-io:fashion-style-classification-api
+  - id: classif-io.recommend-outfits
+    name: Recommend outfits and styles
+    description: >-
+      Generate outfit and product recommendations based on detected
+      garments and stylistic preferences for retail, virtual fitting
+      room, and personal styling use cases.
+    apis:
+      - classif-io:fashion-style-classification-api
+  - id: classif-io.tag-fashion-content
+    name: Tag fashion content
+    description: >-
+      Auto-tag clothing items in user-generated and editorial content
+      to support social media management and e-commerce search.
+    apis:
+      - classif-io:fashion-style-classification-api

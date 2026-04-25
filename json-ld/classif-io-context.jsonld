@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "@vocab": "https://apievangelist.com/vocab/classif-io/",
+    "schema": "https://schema.org/",
+    "classif": "https://www.classif.io/vocab/",
+    "API": "schema:WebAPI",
+    "Image": "schema:ImageObject",
+    "Garment": "classif:Garment",
+    "Style": "classif:FashionStyle",
+    "Category": "schema:DefinedTerm",
+    "Confidence": "classif:ConfidenceScore",
+    "Recommendation": "classif:OutfitRecommendation",
+    "name": "schema:name",
+    "description": "schema:description",
+    "label": "schema:name",
+    "score": "classif:confidence",
+    "createdAt": "schema:dateCreated",
+    "updatedAt": "schema:dateModified"
+  }
+}
