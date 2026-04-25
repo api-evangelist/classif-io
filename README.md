@@ -38,8 +38,8 @@ Detects and categorizes clothing items from images, including shirts, pants, dre
 - [Website](https://www.classif.io/)
 - [Documentation](https://www.classif.io/fashion-style-classification-api/)
 - [JSON-LD Context](json-ld/classif-io-context.jsonld)
-- [Spectral Ruleset](spectral/classif-io-spectral.yml)
-- [Naftiko Capabilities](naftiko/classif-io-capabilities.yml)
+- [Spectral Ruleset](rules/classif-io-rules.yml)
+- [Naftiko Capabilities](capabilities/classif-io-capabilities.yml)
 
 ## Maintainers
 

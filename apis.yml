@@ -52,9 +52,9 @@ common:
   - type: JSON-LD
     url: json-ld/classif-io-context.jsonld
   - type: Spectral
-    url: spectral/classif-io-spectral.yml
+    url: rules/classif-io-rules.yml
   - type: Naftiko Capabilities
-    url: naftiko/classif-io-capabilities.yml
+    url: capabilities/classif-io-capabilities.yml
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
