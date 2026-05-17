@@ -49,7 +49,7 @@ common:
     url: https://www.classif.io/
   - type: Documentation
     url: https://www.classif.io/fashion-style-classification-api/
-  - type: JSON-LD
+  - type: JSONLD
     url: json-ld/classif-io-context.jsonld
   - type: Spectral
     url: rules/classif-io-rules.yml
