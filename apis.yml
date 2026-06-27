@@ -53,7 +53,7 @@ common:
     url: json-ld/classif-io-context.jsonld
   - type: Spectral
     url: rules/classif-io-rules.yml
-  - type: Naftiko Capabilities
+  - type: X-NaftikoCapabilities
     url: capabilities/classif-io-capabilities.yml
 maintainers:
   - FN: Kin Lane
