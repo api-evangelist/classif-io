@@ -23,6 +23,14 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/classif-io
 tags:
   - Apparel
   - Classification
+  - Computer-Vision
+  - Fashion
+  - Image Recognition
+  - Machine-Learning
+  - Recommendation
+tags_raw:
+  - Apparel
+  - Classification
   - Computer Vision
   - Fashion
   - Image Recognition
@@ -40,6 +48,12 @@ apis:
   - aid: classif-io:fashion-style-classification-api
     name: Classif.io Fashion Style Classification API
     tags:
+      - Apparel
+      - Classification
+      - Fashion
+      - Recommendation
+      - Styles
+    tags_raw:
       - Apparel
       - Classification
       - Fashion
