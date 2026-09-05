@@ -25,7 +25,7 @@ accessModel:
   generated: '2026-07-22'
   method: derived
 created: '2025-03-01'
-modified: '2026-04-23'
+modified: '2026-09-05'
 type: Index
 access: 3rd-Party
 position: Consuming
@@ -72,9 +72,15 @@ apis:
       - Style
     image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.classif.io/fashion-style-classification-api/
-    properties:
+    properties: []
+    x-pointer-removals:
       - url: https://www.classif.io/fashion-style-classification-api/
         type: Documentation
+        removed: '2026-09-05'
+        reason: >-
+          Confirmed dead. classif.io does not resolve (NXDOMAIN from 8.8.8.8, 1.1.1.1 and
+          9.9.9.9) and the .io registry RDAP endpoint returns HTTP 404 for the domain
+          object, so the registration has lapsed. Kept here as the historical record.
     description: >-
       The Fashion Style Classification API detects and categorizes
       clothing items from images, including shirts, pants, dresses, and
@@ -84,8 +90,6 @@ apis:
 common:
   - type: Website
     url: https://www.classif.io/
-  - type: Documentation
-    url: https://www.classif.io/fashion-style-classification-api/
   - type: JSONLD
     url: json-ld/classif-io-context.jsonld
   - type: Spectral
@@ -93,3 +97,26 @@ common:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-09-05'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: defunct
+  detail: >-
+    The classif.io domain is no longer registered — every resolver returns NXDOMAIN and the
+    .io registry operator's own RDAP endpoint answers HTTP 404 "Object not found" for the
+    domain object — so the website, the Fashion Style Classification API page and every
+    /.well-known/ and /openapi.json path fail at DNS before an HTTP request is made.
+  evidence:
+    - url: https://www.classif.io/fashion-style-classification-api/
+      status: 0
+    - url: https://www.classif.io/
+      status: 0
+    - url: https://rdap.identitydigital.services/rdap/domain/classif.io
+      status: 404
+    - url: https://registry.npmjs.org/-/v1/search?text=classif.io
+      status: 200
+  checked: '2026-09-05'

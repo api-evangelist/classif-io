@@ -1,0 +1,84 @@
+generated: '2026-09-05'
+method: probed
+source: live DNS + HTTP probe of every host this record knows
+note: >-
+  NO HIT AND NO POINTER. Every /.well-known/ probe failed before an HTTP request could be
+  made: classif.io does not resolve. Authoritative DNS returns NXDOMAIN from 8.8.8.8,
+  1.1.1.1 and 9.9.9.9, and the .io registry operator (Identity Digital) RDAP endpoint
+  answers 404 "Object not found" for the domain object itself, meaning the domain is no
+  longer registered. `status: 0` below is a connection-level failure (curl exit 6,
+  "Could not resolve host"), not an HTTP response. Per the pipeline contract no
+  WellKnown/SecurityTxt pointer is emitted, because no document was served.
+hit_count: 0
+resolution:
+  domain: classif.io
+  resolves: false
+  dns_status: NXDOMAIN
+  resolvers_checked: ['8.8.8.8', '1.1.1.1', '9.9.9.9']
+  rdap:
+    url: https://rdap.identitydigital.services/rdap/domain/classif.io
+    http_status: 404
+    error_code: 404
+    title: Object not found
+  checked: '2026-09-05'
+hosts:
+  - host: https://classif.io
+    resolves: false
+    documents:
+      - path: /.well-known/security.txt
+        status: 0
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 0
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 0
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 0
+        file: null
+      - path: /.well-known/api-catalog
+        status: 0
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 0
+        file: null
+      - path: /.well-known/apis.json
+        status: 0
+        file: null
+      - path: /apis.json
+        status: 0
+        file: null
+      - path: /apis.yml
+        status: 0
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 0
+        file: null
+      - path: /.well-known/agent.json
+        status: 0
+        file: null
+      - path: /openapi.json
+        status: 0
+        file: null
+  - host: https://www.classif.io
+    resolves: false
+    documents:
+      - path: /.well-known/security.txt
+        status: 0
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 0
+        file: null
+      - path: /openapi.json
+        status: 0
+        file: null
+  - host: https://api.classif.io
+    resolves: false
+    documents:
+      - path: /openapi.json
+        status: 0
+        file: null
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
