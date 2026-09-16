@@ -18,120 +18,109 @@ accessModel:
   trial: true
   try_now: false
   public: false
-  label: >-
-    Pricing not determined — a trial preceded paid volume-based tiers, but no price was
-    ever published on a surface that survives
+  label: Pricing not determined — a trial preceded paid volume-based tiers, but no price was ever published
+    on a surface that survives
   confidence: low
   source:
   - archive
   generated: '2026-09-05'
   method: probed
-  note: >-
-    CORRECTED 2026-09-05. This block previously read pricing "freemium" / label
-    "Freemium" at confidence medium, derived from plans/classif-io-plans-pricing.yml —
-    which was a fabricated scaffold carrying three invented tiers, retired the same day
-    and now recording plan_count 0. The freemium label had no provider evidence behind
-    it. The only real pricing evidence is archived marketing copy on the 2025-03-21
-    capture of the homepage: "Flexible Pricing Options: After the trial — Opt for a more
-    cost-effective solution based on your volume, or enhance the model's accuracy with
-    advanced features for a fee." That establishes a trial and volume-based paid tiers
-    and nothing more; no figure, currency or quota was ever published.
+  note: 'CORRECTED 2026-09-05. This block previously read pricing "freemium" / label "Freemium" at confidence
+    medium, derived from plans/classif-io-plans-pricing.yml — which was a fabricated scaffold carrying
+    three invented tiers, retired the same day and now recording plan_count 0. The freemium label had
+    no provider evidence behind it. The only real pricing evidence is archived marketing copy on the 2025-03-21
+    capture of the homepage: "Flexible Pricing Options: After the trial — Opt for a more cost-effective
+    solution based on your volume, or enhance the model''s accuracy with advanced features for a fee."
+    That establishes a trial and volume-based paid tiers and nothing more; no figure, currency or quota
+    was ever published.'
 created: '2025-03-01'
-modified: '2026-09-05'
+modified: '2026-09-16'
 type: Index
 access: 3rd-Party
 position: Consuming
 specificationVersion: '0.23'
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/classif-io.png
 tags:
-  - Apparel
-  - Classification
-  - Computer-Vision
-  - Fashion
-  - Image Recognition
-  - Machine-Learning
-  - Recommendation
+- Apparel
+- Classification
+- Computer-Vision
+- Fashion
+- Image Recognition
+- Machine-Learning
+- Recommendation
 tags_raw:
+- Apparel
+- Classification
+- Computer Vision
+- Fashion
+- Image Recognition
+- Machine Learning
+- Recommendation
+description: 'Classif.io was a machine-learning classification service that offered to build a custom
+  classification model from a written description of the customer''s task, publish it as a REST API, and
+  let prospects try an interactive demo before buying. Its site listed sixteen such demo APIs — Fashion
+  Style Classification, Custom Car Part Identification, Surgical Instrument Classification, Retail Planogram
+  Compliance and others — each on its own landing page, alongside a "describe your use case" intake form.
+  The homepage credited Kindwise, the team behind Plant.id, Insect.id, Mushroom ID and crop.health, as
+  the maker. The service is retired: the classif.io domain is no longer registered, the last live capture
+  of the site is 2025-03-21, and no developer documentation, OpenAPI definition or other machine-readable
+  contract survives in any public archive. See lifecycle/classif-io-lifecycle.yml for the retirement evidence.'
+apis:
+- aid: classif-io:fashion-style-classification-api
+  name: Classif.io Fashion Style Classification API
+  tags:
   - Apparel
   - Classification
-  - Computer Vision
   - Fashion
-  - Image Recognition
-  - Machine Learning
   - Recommendation
-description: >-
-  Classif.io was a machine-learning classification service that offered to build a custom
-  classification model from a written description of the customer's task, publish it as a
-  REST API, and let prospects try an interactive demo before buying. Its site listed
-  sixteen such demo APIs — Fashion Style Classification, Custom Car Part Identification,
-  Surgical Instrument Classification, Retail Planogram Compliance and others — each on its
-  own landing page, alongside a "describe your use case" intake form. The homepage
-  credited Kindwise, the team behind Plant.id, Insect.id, Mushroom ID and crop.health, as
-  the maker. The service is retired: the classif.io domain is no longer registered, the
-  last live capture of the site is 2025-03-21, and no developer documentation, OpenAPI
-  definition or other machine-readable contract survives in any public archive. See
-  lifecycle/classif-io-lifecycle.yml for the retirement evidence.
-apis:
-  - aid: classif-io:fashion-style-classification-api
-    name: Classif.io Fashion Style Classification API
-    tags:
-      - Apparel
-      - Classification
-      - Fashion
-      - Recommendation
-      - Styles
-    tags_raw:
-      - Apparel
-      - Classification
-      - Fashion
-      - Recommendation
-      - Style
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://www.classif.io/fashion-style-classification-api/
-    properties: []
-    x-pointer-removals:
-      - url: https://www.classif.io/fashion-style-classification-api/
-        type: Documentation
-        removed: '2026-09-05'
-        reason: >-
-          Confirmed dead. classif.io does not resolve (NXDOMAIN from 8.8.8.8, 1.1.1.1 and
-          9.9.9.9) and the .io registry RDAP endpoint returns HTTP 404 for the domain
-          object, so the registration has lapsed. Kept here as the historical record.
-    description: >-
-      One of the sixteen demo classification APIs Classif.io advertised, named
-      "Fashion Style classification API" in the site navigation of the last archived
-      capture of the homepage (2025-03-21). What the API actually accepted and returned
-      cannot be stated: its landing page,
-      https://www.classif.io/fashion-style-classification-api/, was real and linked from
-      that navigation, but the Internet Archive holds no capture of it or of any other
-      classif.io subpage, and the domain is no longer registered. No endpoint, schema,
-      parameter or response of this API is asserted here, because none survives on any
-      public surface. The API is retired along with the rest of the service — see
-      lifecycle/classif-io-lifecycle.yml.
+  - Styles
+  tags_raw:
+  - Apparel
+  - Classification
+  - Fashion
+  - Recommendation
+  - Style
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.classif.io/fashion-style-classification-api/
+  properties: []
+  x-pointer-removals:
+  - url: https://www.classif.io/fashion-style-classification-api/
+    type: Documentation
+    removed: '2026-09-05'
+    reason: Confirmed dead. classif.io does not resolve (NXDOMAIN from 8.8.8.8, 1.1.1.1 and 9.9.9.9) and
+      the .io registry RDAP endpoint returns HTTP 404 for the domain object, so the registration has lapsed.
+      Kept here as the historical record.
+  description: 'One of the sixteen demo classification APIs Classif.io advertised, named "Fashion Style
+    classification API" in the site navigation of the last archived capture of the homepage (2025-03-21).
+    What the API actually accepted and returned cannot be stated: its landing page, https://www.classif.io/fashion-style-classification-api/,
+    was real and linked from that navigation, but the Internet Archive holds no capture of it or of any
+    other classif.io subpage, and the domain is no longer registered. No endpoint, schema, parameter or
+    response of this API is asserted here, because none survives on any public surface. The API is retired
+    along with the rest of the service — see lifecycle/classif-io-lifecycle.yml.'
 common:
-  - type: JSONLD
-    url: json-ld/classif-io-context.jsonld
-  - type: Spectral
-    url: rules/classif-io-rules.yml
-  - type: Lifecycle
-    url: lifecycle/classif-io-lifecycle.yml
+- type: Website
+  url: https://classif.io
+- type: JSONLD
+  url: json-ld/classif-io-context.jsonld
+- type: Spectral
+  url: rules/classif-io-rules.yml
+- type: Lifecycle
+  url: lifecycle/classif-io-lifecycle.yml
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
 x-pointer-removals:
   common:
-    - url: https://www.classif.io/
-      type: Website
-      removed: '2026-09-05'
-      reason: >-
-        Confirmed dead and removed rather than left to rot, per the pointer-liveness rule.
-        classif.io publishes no NS records and returns NXDOMAIN from 8.8.8.8, 1.1.1.1 and
-        9.9.9.9, and the .io registry operator's RDAP endpoint answers HTTP 404 "Object not
-        found" for the domain object, so the registration has lapsed. This is not a bot
-        challenge or an edge policy — there is no host to challenge us. A lapsed .io name is
-        re-registrable by anyone, so leaving the pointer in place would eventually point
-        readers at whoever picks the domain up next. The company's own site is recorded in
-        lifecycle/classif-io-lifecycle.yml with its last archived capture instead.
+  - url: https://www.classif.io/
+    type: Website
+    removed: '2026-09-05'
+    reason: Confirmed dead and removed rather than left to rot, per the pointer-liveness rule. classif.io
+      publishes no NS records and returns NXDOMAIN from 8.8.8.8, 1.1.1.1 and 9.9.9.9, and the .io registry
+      operator's RDAP endpoint answers HTTP 404 "Object not found" for the domain object, so the registration
+      has lapsed. This is not a bot challenge or an edge policy — there is no host to challenge us. A
+      lapsed .io name is re-registrable by anyone, so leaving the pointer in place would eventually point
+      readers at whoever picks the domain up next. The company's own site is recorded in lifecycle/classif-io-lifecycle.yml
+      with its last archived capture instead.
 x-enrichment:
   date: '2026-09-05'
   status: minimal
@@ -140,27 +129,25 @@ x-enrichment:
 x-coverage:
   state: none
   reason: defunct
-  detail: >-
-    Classif.io is gone, not merely unreachable: the .io registration has lapsed, the zone
-    publishes no NS records, every resolver returns NXDOMAIN, and the registry operator's
-    RDAP endpoint answers HTTP 404 for the domain object, so the site, the Fashion Style
-    Classification API page and every /.well-known/, /openapi.json and GraphQL probe fail
-    at DNS before an HTTP request is made; the Internet Archive holds the homepage only —
-    18 rows, nothing after 2025-03-21, not one capture of any subpage — so no contract
-    survives anywhere to harvest.
+  detail: 'Classif.io is gone, not merely unreachable: the .io registration has lapsed, the zone publishes
+    no NS records, every resolver returns NXDOMAIN, and the registry operator''s RDAP endpoint answers
+    HTTP 404 for the domain object, so the site, the Fashion Style Classification API page and every /.well-known/,
+    /openapi.json and GraphQL probe fail at DNS before an HTTP request is made; the Internet Archive holds
+    the homepage only — 18 rows, nothing after 2025-03-21, not one capture of any subpage — so no contract
+    survives anywhere to harvest.'
   evidence:
-    - url: https://www.classif.io/fashion-style-classification-api/
-      status: 0
-    - url: https://www.classif.io/
-      status: 0
-    - url: https://api.classif.io/openapi.json
-      status: 0
-    - url: https://rdap.identitydigital.services/rdap/domain/classif.io
-      status: 404
-    - url: https://registry.npmjs.org/-/v1/search?text=classif.io
-      status: 200
-    - url: https://api.github.com/orgs/classif-io
-      status: 404
-    - url: http://web.archive.org/cdx/search/cdx?url=classif.io&matchType=domain
-      status: 200
+  - url: https://www.classif.io/fashion-style-classification-api/
+    status: 0
+  - url: https://www.classif.io/
+    status: 0
+  - url: https://api.classif.io/openapi.json
+    status: 0
+  - url: https://rdap.identitydigital.services/rdap/domain/classif.io
+    status: 404
+  - url: https://registry.npmjs.org/-/v1/search?text=classif.io
+    status: 200
+  - url: https://api.github.com/orgs/classif-io
+    status: 404
+  - url: http://web.archive.org/cdx/search/cdx?url=classif.io&matchType=domain
+    status: 200
   checked: '2026-09-05'
