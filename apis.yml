@@ -47,7 +47,7 @@ tags:
 - Fashion
 - Image Recognition
 - Machine-Learning
-- Recommendation
+- Recommendations
 tags_raw:
 - Apparel
 - Classification
@@ -72,7 +72,7 @@ apis:
   - Apparel
   - Classification
   - Fashion
-  - Recommendation
+  - Recommendations
   - Styles
   tags_raw:
   - Apparel
