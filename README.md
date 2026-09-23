@@ -64,14 +64,32 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Classif.io provides machine-learning-powered classification APIs that identify and label visual content. The flagship offering is a Fashion Style Classification API that detects clothing items, categorizes shirts, pants, dresses, and accessories from images, and supports outfit recommendation, retail product matching, virtual fitting room, social media tagging, and e-commerce styling use cases.
+> ### Status: retired
+>
+> Classif.io no longer exists as a reachable service. The `classif.io` domain is not
+> registered — the zone publishes no NS records, every public resolver returns NXDOMAIN,
+> and the .io registry operator's RDAP endpoint answers HTTP 404 for the domain object.
+> The last live capture of the site in the Internet Archive is **2025-03-21**. This
+> repository is kept as the historical record of what the company published, with the
+> evidence for the retirement in
+> [`lifecycle/classif-io-lifecycle.yml`](lifecycle/classif-io-lifecycle.yml). Note that a
+> lapsed `.io` name is re-registrable by anyone, so any content that appears at
+> classif.io in future should not be assumed to be this company.
+
+Classif.io was a machine-learning classification service that offered to build a custom
+classification model from a written description of the customer's task, publish it as a
+REST API, and let prospects try an interactive demo before buying. Its site listed sixteen
+such demo APIs — Fashion Style Classification, Custom Car Part Identification, Surgical
+Instrument Classification, Retail Planogram Compliance and others — each on its own landing
+page, alongside a "describe your use case" intake form. The homepage credited **Kindwise**,
+the team behind Plant.id, Insect.id, Mushroom ID and crop.health, as the maker.
 
 **URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/classif-io/refs/heads/main/apis.yml)
 
 ## Scope
 
 - **Type:** Index
-- **Position:** Consumer
+- **Position:** Consuming
 - **Access:** 3rd-Party
 
 ## Tags:
@@ -81,30 +99,48 @@ Classif.io provides machine-learning-powered classification APIs that identify a
 ## Timestamps
 
 - **Created:** 2025-03-01
-- **Modified:** 2026-04-23
+- **Modified:** 2026-09-05
 
 ## APIs
 
 ### Classif.io Fashion Style Classification API
-Detects and categorizes clothing items from images, including shirts, pants, dresses, and accessories, and produces stylistic labels for personal styling, retail recommendation, virtual fitting room, social media tagging, and e-commerce styling use cases.
 
-**Human URL:** [https://www.classif.io/fashion-style-classification-api/](https://www.classif.io/fashion-style-classification-api/)
+One of the sixteen demo classification APIs Classif.io advertised, named "Fashion Style
+classification API" in the site navigation of the last archived capture of the homepage
+(2025-03-21). What the API actually accepted and returned cannot be stated: its landing
+page was real and linked from that navigation, but the Internet Archive holds no capture of
+it — or of any other classif.io subpage — and the domain is no longer registered. No
+endpoint, schema, parameter or response of this API is asserted anywhere in this
+repository, because none survives on any public surface.
+
+**Human URL (historical, no longer resolves):** `https://www.classif.io/fashion-style-classification-api/`
 
 #### Tags:
 
  - Apparel, Classification, Fashion, Recommendation, Style
 
-#### Properties
-
-- [Documentation](https://www.classif.io/fashion-style-classification-api/)
-
 ## Common Properties
 
-- [Website](https://www.classif.io/)
-- [Documentation](https://www.classif.io/fashion-style-classification-api/)
 - [JSON-LD Context](json-ld/classif-io-context.jsonld)
 - [Spectral Ruleset](rules/classif-io-rules.yml)
-- [Naftiko Capabilities](capabilities/classif-io-capabilities.yml)
+- [Lifecycle](lifecycle/classif-io-lifecycle.yml)
+
+Two pointers were removed on 2026-09-05 after being confirmed dead — the `Website`
+(`https://www.classif.io/`) and the API `Documentation`
+(`https://www.classif.io/fashion-style-classification-api/`). Both removals, with their
+reasons, are recorded under `x-pointer-removals` in `apis.yml`.
+
+## What this repository does and does not contain
+
+Three artifacts here record a measured **zero**, not a gap in our research:
+[`plans/`](plans/classif-io-plans-pricing.yml) (`plan_count: 0`),
+[`rate-limits/`](rate-limits/classif-io-rate-limits.yml) (`limit_count: 0`) and
+[`finops/`](finops/classif-io-finops.yml) (empty billing model). Each previously carried
+invented values written by a bulk sweep dated 2026-05-04 — pricing tiers, request ceilings,
+FOCUS billing columns and metering definitions that Classif.io never published — which have
+been removed and replaced with the probe result and a note saying so. There is no OpenAPI,
+AsyncAPI, GraphQL schema, MCP server, agent card, `llms.txt` or `/.well-known/` document,
+and none can be recovered.
 
 ## Maintainers
 

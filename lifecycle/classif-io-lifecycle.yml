@@ -1,0 +1,94 @@
+generated: '2026-09-05'
+method: probed
+source: >-
+  Live DNS (8.8.8.8, 1.1.1.1, 9.9.9.9) + .io registry RDAP
+  (https://rdap.identitydigital.services/rdap/domain/classif.io) + the Internet Archive
+  CDX index for classif.io (http://web.archive.org/cdx/search/cdx?url=classif.io&matchType=domain).
+description: >-
+  Classif.io publishes no versioning policy, no deprecation policy, no SLA, no changelog
+  and no status page — and cannot, because the whole surface is gone. The classif.io
+  domain is no longer registered, so the entire API programme is retired by domain lapse
+  rather than by an announced sunset. This file records the retirement and the evidence
+  for it; it does not credit Classif.io with any published lifecycle document.
+status: retired
+retirement:
+  kind: domain-lapse
+  announced: false
+  sunset_header: false
+  deprecation_header: false
+  last_observed_live: '2025-03-21'
+  last_observed_live_evidence: >-
+    Internet Archive capture 20250321033905 of https://www.classif.io/ returned HTTP 200.
+    It is the most recent live capture in the CDX index; the only other 200 captures are
+    20250319032413 and 20240418194851, and the index holds no capture of any kind after
+    2025-03-21.
+  first_observed_gone: '2026-09-05'
+  first_observed_gone_evidence: >-
+    NXDOMAIN for classif.io and www.classif.io from 8.8.8.8, 1.1.1.1 and 9.9.9.9 with no
+    NS records published for the zone, and HTTP 404 "Object not found" from the .io
+    registry operator's RDAP endpoint for the domain object itself.
+  window_note: >-
+    The surface went away at some point between 2025-03-21 and 2026-09-05. The exact date
+    cannot be established from public evidence and is not asserted here.
+  reversible: false
+  reversible_note: >-
+    A lapsed .io registration is re-registrable by any party, so the domain returning to
+    service would not by itself mean this company is back. Treat any future content at
+    classif.io as unattributed until re-verified.
+versioning:
+  scheme: null
+  mechanism: null
+  docs: null
+  notes: No versioning policy was ever published on a page that survives in any public archive.
+deprecation:
+  policy_url: null
+  changelog: null
+  sunset_header: false
+  notes: >-
+    No RFC 8594 Sunset or Deprecation header can be observed, and no deprecation policy
+    page exists. The retirement was silent.
+sla:
+  url: null
+  public_uptime_target: null
+  notes: No SLA published.
+status_page: null
+status_page_note: >-
+  No status page. No StatusPage or Deprecation pointer is emitted in apis.yml, because
+  the provider publishes neither — only a Lifecycle pointer to this measured record.
+deprecated_products:
+  - name: Classif.io Fashion Style Classification API
+    aid: classif-io:fashion-style-classification-api
+    superseded_by: null
+    status: retired
+    evidence: >-
+      Its page, https://www.classif.io/fashion-style-classification-api/, was a real page
+      linked from the homepage navigation in the 2025-03-21 archive capture, but the
+      Internet Archive holds no capture of that URL or of any other classif.io subpage —
+      the whole archived footprint of the domain is the homepage plus a 2018 robots.txt
+      404 — so what it documented cannot be recovered and is not reconstructed here.
+deprecated_operations: []
+operator_note: >-
+  The 2025-03-21 archive capture of the homepage carries the line "Made by Kindwise" and
+  credits the same team's Plant.id, Insect.id, Mushroom ID and crop.health models, so
+  classif.io was a Kindwise-operated property. kindwise.com still answers HTTP 200. That
+  is an attribution finding only: nothing from Kindwise's own surface is imported into
+  this record, because a Kindwise contract would belong to Kindwise, not to Classif.io.
+evidence:
+  - url: https://www.classif.io/
+    status: 0
+    result: DNS resolution failed (NXDOMAIN, curl exit 6 "Could not resolve host")
+  - url: https://rdap.identitydigital.services/rdap/domain/classif.io
+    status: 404
+    result: registry object not found — domain not registered
+  - url: http://web.archive.org/web/20250321033905/https://www.classif.io/
+    status: 200
+    result: last archived live capture of the homepage
+  - url: http://web.archive.org/cdx/search/cdx?url=classif.io&matchType=domain
+    status: 200
+    result: 18 rows total, none newer than 2025-03-21, no subpage ever captured
+  - url: https://www.kindwise.com/
+    status: 200
+    result: operator named on the archived homepage is still trading
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
