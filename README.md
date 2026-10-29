@@ -1,4 +1,4 @@
-# Classif.io (classif-io)
+# Classif.io
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,86 +64,107 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-> ### Status: retired
->
-> Classif.io no longer exists as a reachable service. The `classif.io` domain is not
-> registered — the zone publishes no NS records, every public resolver returns NXDOMAIN,
-> and the .io registry operator's RDAP endpoint answers HTTP 404 for the domain object.
-> The last live capture of the site in the Internet Archive is **2025-03-21**. This
-> repository is kept as the historical record of what the company published, with the
-> evidence for the retirement in
-> [`lifecycle/classif-io-lifecycle.yml`](lifecycle/classif-io-lifecycle.yml). Note that a
-> lapsed `.io` name is re-registrable by anyone, so any content that appears at
-> classif.io in future should not be assumed to be this company.
+Classif.io was a machine-learning classification service that offered to build a custom classification model from a written description of the customer's task, publish it as a REST API, and let prospects try an interactive demo before buying. Its site listed sixteen such demo APIs — Fashion Style Classification, Custom Car Part Identification, Surgical Instrument Classification, Retail Planogram Compliance and others — each on its own landing page, alongside a "describe your use case" intake form. The homepage credited Kindwise, the team behind Plant.id, Insect.id, Mushroom ID and crop.health, as the maker. The service is retired: the classif.io domain is no longer registered, the last live capture of the site is 2025-03-21, and no developer documentation, OpenAPI definition or other machine-readable contract survives in any public archive. See lifecycle/classif-io-lifecycle.yml for the retirement evidence.
 
-Classif.io was a machine-learning classification service that offered to build a custom
-classification model from a written description of the customer's task, publish it as a
-REST API, and let prospects try an interactive demo before buying. Its site listed sixteen
-such demo APIs — Fashion Style Classification, Custom Car Part Identification, Surgical
-Instrument Classification, Retail Planogram Compliance and others — each on its own landing
-page, alongside a "describe your use case" intake form. The homepage credited **Kindwise**,
-the team behind Plant.id, Insect.id, Mushroom ID and crop.health, as the maker.
+**Areas:** Apparel · Classification · Computer Vision · Fashion · Image Recognition · Machine Learning · Recommendations
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/classif-io/refs/heads/main/apis.yml)
+## Classif.io on APIs.io
 
-## Scope
+Everything profiled for Classif.io is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/classif-io/](https://apis.io/providers/classif-io/)** — or go straight to one of the APIs or properties below.
 
-- **Type:** Index
-- **Position:** Consuming
-- **Access:** 3rd-Party
+### APIs (1)
 
-## Tags:
+- [Classif.io Fashion Style Classification API](https://apis.io/apis/classif-io/fashion-style-classification-api/) — One of the sixteen demo classification APIs Classif.io advertised, named "Fashion Style classification API" in the site navigation of the last archived…
 
- - Apparel, Classification, Computer Vision, Fashion, Image Recognition, Machine Learning, Recommendation
+### Published properties
 
-## Timestamps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Created:** 2025-03-01
-- **Modified:** 2026-09-05
+#### JSON-LD (1)
 
-## APIs
+Linked-data contexts for the provider's vocabulary.
 
-### Classif.io Fashion Style Classification API
+- [Classif Io Context](https://apis.io/jsonld/classif-io/classif-io-context/)
 
-One of the sixteen demo classification APIs Classif.io advertised, named "Fashion Style
-classification API" in the site navigation of the last archived capture of the homepage
-(2025-03-21). What the API actually accepted and returned cannot be stated: its landing
-page was real and linked from that navigation, but the Internet Archive holds no capture of
-it — or of any other classif.io subpage — and the domain is no longer registered. No
-endpoint, schema, parameter or response of this API is asserted anywhere in this
-repository, because none survives on any public surface.
+#### Governance rules (1)
 
-**Human URL (historical, no longer resolves):** `https://www.classif.io/fashion-style-classification-api/`
+Spectral rulesets for the provider's contracts.
 
-#### Tags:
+- [Classif.io API Rules](https://apis.io/rules/classif-io/classif-io-rules/)
 
- - Apparel, Classification, Fashion, Recommendation, Style
+#### Plans and pricing (1)
 
-## Common Properties
+Published plans, tiers and prices.
 
-- [JSON-LD Context](json-ld/classif-io-context.jsonld)
-- [Spectral Ruleset](rules/classif-io-rules.yml)
-- [Lifecycle](lifecycle/classif-io-lifecycle.yml)
+- [Classif Io Plans Pricing](https://apis.io/plans/classif-io/classif-io-plans-pricing/)
 
-Two pointers were removed on 2026-09-05 after being confirmed dead — the `Website`
-(`https://www.classif.io/`) and the API `Documentation`
-(`https://www.classif.io/fashion-style-classification-api/`). Both removals, with their
-reasons, are recorded under `x-pointer-removals` in `apis.yml`.
+#### Rate limits (1)
 
-## What this repository does and does not contain
+Published request limits.
 
-Three artifacts here record a measured **zero**, not a gap in our research:
-[`plans/`](plans/classif-io-plans-pricing.yml) (`plan_count: 0`),
-[`rate-limits/`](rate-limits/classif-io-rate-limits.yml) (`limit_count: 0`) and
-[`finops/`](finops/classif-io-finops.yml) (empty billing model). Each previously carried
-invented values written by a bulk sweep dated 2026-05-04 — pricing tiers, request ceilings,
-FOCUS billing columns and metering definitions that Classif.io never published — which have
-been removed and replaced with the probe result and a note saying so. There is no OpenAPI,
-AsyncAPI, GraphQL schema, MCP server, agent card, `llms.txt` or `/.well-known/` document,
-and none can be recovered.
+- [Classif Io Rate Limits](https://apis.io/rate-limits/classif-io/classif-io-rate-limits/)
 
-## Maintainers
+#### FinOps (1)
 
-**FN:** Kin Lane
+What the API costs to run, by operation.
 
-**Email:** kin@apievangelist.com
+- [Classif Io Finops](https://apis.io/finops/classif-io/classif-io-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://classif.io)
+
+## API Evangelist rating
+
+**Kin Score 8.2** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 10.7 |
+| Contract governance | 11.4 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/classif-io/](https://apis.io/providers/classif-io/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Classif.io: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/classif-io/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
